@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.Font?>
+<AnchorPane xmlns:fx="http://javafx.com/fxml/1" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity"
+            prefHeight="540.0" prefWidth="789.0" style="-fx-background-color: #ffffff;"
+            xmlns="http://javafx.com/javafx/10.0.2-internal" fx:controller="fr.koala.m2l.controller.UsersController">
+    <children>
+        <fx:include fx:id="include" source="button.fxml"/>
+        <Button alignment="TOP_RIGHT" layoutX="-11.0" layoutY="324.0" mnemonicParsing="false" prefHeight="31.0"
+                prefWidth="164.0" style="-fx-background-color: #38c798;" text="Utilisateurs" textAlignment="RIGHT"
+                textFill="WHITE">
+            <font>
+                <Font name="Calibri" size="14.0"/>
+            </font>
+        </Button>
+        <SplitPane dividerPositions="0.4750430292598967" layoutX="198.0" layoutY="92.0" prefHeight="440.0"
+                   prefWidth="583.0">
+            <items>
+                <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="160.0" prefWidth="100.0">
+                    <children>
+                        <TableView fx:id="personTablee" editable="true" layoutY="35.0"
+                                   onMouseClicked="#tableUserSelection" prefHeight="403.0" prefWidth="273.0"
+                                   AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0"
+                                   AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="35.0">
+                            <columns>
+                                <TableColumn fx:id="firstNameColumne" prefWidth="75.0" text="Nom"/>
+                                <TableColumn fx:id="lastNameColumne" prefWidth="75.0" text="Prénom"/>
+                            </columns>
+                            <columnResizePolicy>
+                                <TableView fx:constant="CONSTRAINED_RESIZE_POLICY"/>
+                            </columnResizePolicy>
+                        </TableView>
+                        <TextField fx:id="usersRecherche" layoutX="3.0" layoutY="5.0"
+                                   onKeyReleased="#onRechercherUpdate" prefHeight="25.0" prefWidth="267.0"
+                                   promptText="Rechercher"/>
+                    </children>
+                </AnchorPane>
+                <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="160.0" prefWidth="100.0" styleClass="background">
+                    <children>
+                        <Label layoutY="1.0" prefHeight="62.0" prefWidth="210.0" styleClass="label-header"
+                               text="Person Details" AnchorPane.leftAnchor="5.0" AnchorPane.topAnchor="5.0"/>
+                        <GridPane layoutX="5.0" layoutY="60.0" prefHeight="329.0" prefWidth="292.0"
+                                  AnchorPane.leftAnchor="5.0" AnchorPane.rightAnchor="5.0" AnchorPane.topAnchor="60.0">
+                            <columnConstraints>
+                                <ColumnConstraints hgrow="SOMETIMES" maxWidth="167.0" minWidth="10.0"
+                                                   prefWidth="146.0"/>
+                                <ColumnConstraints hgrow="SOMETIMES" maxWidth="193.0" minWidth="10.0"
+                                                   prefWidth="146.0"/>
+                            </columnConstraints>
+                            <rowConstraints>
+                                <RowConstraints maxHeight="37.0" minHeight="4.0" prefHeight="25.0" vgrow="SOMETIMES"/>
+                                <RowConstraints maxHeight="95.0" minHeight="0.0" percentHeight="7.0" prefHeight="95.0"
+                                                vgrow="SOMETIMES"/>
+                                <RowConstraints maxHeight="124.0" minHeight="0.0" percentHeight="20.0" prefHeight="82.0"
+                                                vgrow="SOMETIMES"/>
+                                <RowConstraints maxHeight="154.0" minHeight="0.0" percentHeight="20.0" prefHeight="56.0"
+                                                vgrow="SOMETIMES"/>
+                                <RowConstraints maxHeight="106.0" minHeight="10.0" prefHeight="27.0" vgrow="SOMETIMES"/>
+                                <RowConstraints maxHeight="83.0" minHeight="10.0" prefHeight="23.0" vgrow="SOMETIMES"/>
+                                <RowConstraints maxHeight="99.0" minHeight="10.0" percentHeight="35.0" prefHeight="99.0"
+                                                vgrow="SOMETIMES"/>
+                            </rowConstraints>
+                            <children>
+                                <Label text="Nom:"/>
+                                <Label fx:id="nomLabel" styleClass="label-bright" text="error"
+                                       GridPane.columnIndex="1"/>
+                                <Label text="Prénom:" GridPane.rowIndex="1"/>
+                                <Label fx:id="prenomLabel" styleClass="label-bright" text="error"
+                                       GridPane.columnIndex="1" GridPane.rowIndex="1"/>
+                                <Label text="Adresse:" GridPane.rowIndex="2"/>
+                                <Label fx:id="adresseLabel" styleClass="label-bright" text="error" wrapText="true"
+                                       GridPane.columnIndex="1" GridPane.rowIndex="2"/>
+                                <Label text="Email:" GridPane.rowIndex="3"/>
+                                <Label fx:id="mailLabel" styleClass="label-bright" text="error" GridPane.columnIndex="1"
+                                       GridPane.rowIndex="3"/>
+                                <Label text="Numéro de Tel.:" GridPane.rowIndex="4"/>
+                                <Label fx:id="numLabel" styleClass="label-bright" text="error" GridPane.columnIndex="1"
+                                       GridPane.rowIndex="4"/>
+                                <Label text="Numéro client:" GridPane.rowIndex="5"/>
+                                <Label fx:id="idLabel" styleClass="label-bright" text="error" GridPane.columnIndex="1"
+                                       GridPane.rowIndex="5"/>
+                                <Label text="Sport(s):" GridPane.rowIndex="6"/>
+                                <Label fx:id="labelUserSport" text="error" GridPane.columnIndex="1"
+                                       GridPane.rowIndex="6"/>
+                            </children>
+                        </GridPane>
+                        <!--         onAction="#handleNewPerson"         -->
+                        <!--         onAction="#handleEditPerson"         -->
+                        <!--         onAction="#handleDeletePerson"         -->
+                        <Button fx:id="btn" layoutX="137.0" layoutY="399.0" mnemonicParsing="false"
+                                onMouseClicked="#addUser" prefHeight="25.0" prefWidth="48.0"
+                                style="-fx-background-color: #757b78;" styleClass="DarkTheme.css" text="New"
+                                textFill="#fffafa"/>
+                        <Button fx:id="btn1" layoutX="192.0" layoutY="399.0" minWidth="37.0" mnemonicParsing="false"
+                                onMouseClicked="#editUser" prefHeight="25.0" prefWidth="48.0"
+                                style="-fx-background-color: #757b78;" text="Edit" textFill="#f5f3f3"/>
+                        <Button fx:id="btn2" layoutX="246.0" layoutY="399.0" minWidth="48.0" mnemonicParsing="false"
+                                onMouseClicked="#delUser" prefHeight="25.0" prefWidth="48.0"
+                                style="-fx-background-color: #757b78;" text="Del" textFill="#fcf8f8"/>
+                    </children>
+                </AnchorPane>
+            </items>
+        </SplitPane>
+        <Label layoutX="198.0" layoutY="23.0" prefHeight="28.0" prefWidth="172.0" text="Utilisateurs"
+               textFill="#00000082">
+            <font>
+                <Font name="Calibri Italic" size="24.0"/>
+            </font>
+        </Label>
+    </children>
+</AnchorPane>

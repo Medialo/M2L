@@ -1,0 +1,195 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!--        <?xml version="1.0" encoding="UTF-8"?>-->
+<!--        <?import javafx.scene.control.*?>-->
+<!--        <?import javafx.scene.layout.*?>-->
+<!--        <?import javafx.scene.shape.*?>-->
+<!--        <?import javafx.scene.text.*?>-->
+<!--        &lt;!&ndash;fx:controller="application.Controller2"&ndash;&gt;-->
+<!--<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="540.0" prefWidth="789.0" style="-fx-background-color: #ffffff;" xmlns="http://javafx.com/javafx/10.0.2-internal" xmlns:fx="http://javafx.com/fxml/1" fx:controller="fr.koala.m2l.controller.Controller">-->
+<!--<children>-->
+<!--    <AnchorPane prefHeight="540.0" prefWidth="190.0" style="-fx-background-color: #757B78;" AnchorPane.bottomAnchor="0.0">-->
+<!--        <children>-->
+<!--            <Button fx:id="refBtnWin" alignment="TOP_RIGHT" contentDisplay="TOP" layoutX="-11.0" layoutY="244.0" mnemonicParsing="false" onMouseClicked="#onBtnAccueilPressed" prefHeight="31.0" prefWidth="164.0" style="-fx-background-color: #38c798;" text="Accueil" textAlignment="RIGHT" textFill="WHITE">-->
+<!--                <font>-->
+<!--                    <Font name="Calibri" size="14.0" />-->
+<!--                </font>-->
+<!--            </Button>-->
+<!--            <Button fx:id="btnEquipes" alignment="TOP_RIGHT" contentDisplay="TOP" layoutX="-11.0" layoutY="364.0" mnemonicParsing="false" onMouseClicked="#onBtnEquipePressed" prefHeight="31.0" prefWidth="164.0" style="-fx-background-color: #2C9170;" text="Equipes" textAlignment="RIGHT" textFill="WHITE">-->
+<!--                <font>-->
+<!--                    <Font name="Calibri" size="14.0" />-->
+<!--                </font>-->
+<!--            </Button>-->
+<!--            <Button fx:id="btnCompetitions" alignment="TOP_RIGHT" layoutX="-11.0" layoutY="284.0" mnemonicParsing="false" onMouseClicked="#onBtnCompPressed" prefHeight="31.0" prefWidth="164.0" style="-fx-background-color: #2C9170;" text="Compétitions" textAlignment="RIGHT" textFill="WHITE">-->
+<!--                <font>-->
+<!--                    <Font name="Calibri" size="14.0" />-->
+<!--                </font>-->
+<!--            </Button>-->
+<!--            <Button fx:id="btnUsers" alignment="TOP_RIGHT" layoutX="-11.0" layoutY="324.0" mnemonicParsing="false" onMouseClicked="#onBtnUsersPressed" prefHeight="31.0" prefWidth="164.0" style="-fx-background-color: #2C9170;" text="Utilisateurs" textAlignment="RIGHT" textFill="WHITE">-->
+<!--                <font>-->
+<!--                    <Font name="Calibri" size="14.0" />-->
+<!--                </font>-->
+<!--            </Button>-->
+<!--            <Button fx:id="btnParametre" alignment="TOP_RIGHT" layoutX="-11.0" layoutY="405.0" mnemonicParsing="false" onMouseClicked="#onBtnParamPressed" prefHeight="31.0" prefWidth="164.0" style="-fx-background-color: #2C9170;" text="Paramètres" textFill="WHITE">-->
+<!--                <font>-->
+<!--                    <Font name="Calibri" size="14.0" />-->
+<!--                </font>-->
+<!--            </Button>-->
+<!--            <Text fill="#f8f7f7" layoutX="31.0" layoutY="149.0" strokeType="OUTSIDE" strokeWidth="0.0" text="[Prenom] " textAlignment="CENTER" wrappingWidth="78.0" fx:id="prenomText">-->
+<!--                <font>-->
+<!--                    <Font name="System Bold" size="14.0" />-->
+<!--                </font>-->
+<!--            </Text>-->
+<!--            <Text fill="#f8f7f7" layoutX="102.0" layoutY="149.0" strokeType="OUTSIDE" strokeWidth="0.0" text="[Nom] " textAlignment="CENTER" wrappingWidth="53.0" fx:id="nomText">-->
+<!--                <font>-->
+<!--                    <Font name="System Bold" size="14.0" />-->
+<!--                </font>-->
+<!--            </Text>-->
+<!--            &lt;!&ndash; <ImageView stylesheet="img.css" fitHeight="80.0" fitWidth="85.0" layoutX="37.0" layoutY="14.0" pickOnBounds="true" preserveRatio="true" styleClass="fr">-->
+<!--               <image>-->
+<!--                  <Image url="@img/2x/outline_person_white_18dp.png" />-->
+<!--               </image>-->
+<!--            </ImageView> &ndash;&gt;-->
+<!--            <Text fill="#f8f7f7" layoutX="58.0" layoutY="168.0" strokeType="OUTSIDE" strokeWidth="0.0" text="[Role] " textAlignment="CENTER" wrappingWidth="78.0" fx:id="roleText">-->
+<!--                <font>-->
+<!--                    <Font name="System Bold" size="14.0" />-->
+<!--                </font>-->
+<!--            </Text>-->
+<!--            <Label layoutX="56.0" layoutY="506.0" opacity="0.54" text="Déconnexion" textFill="#dacfcf">-->
+<!--                <font>-->
+<!--                    <Font name="System Italic" size="14.0" />-->
+<!--                </font>-->
+<!--            </Label>-->
+<!--        </children>-->
+<!--    </AnchorPane>-->
+<!--    <AnchorPane layoutX="157.0" layoutY="190.0" prefHeight="210.0" prefWidth="443.0" />-->
+<!--    <Label alignment="CENTER" contentDisplay="CENTER" layoutX="204.0" layoutY="228.0" prefHeight="300.0" prefWidth="280.0" style="-fx-background-color: #e9ebea;" text="Calendrier des compétitions à venir" />-->
+<!--    <Label alignment="CENTER" contentDisplay="CENTER" layoutX="495.0" layoutY="229.0" prefHeight="300.0" prefWidth="280.0" style="-fx-background-color: #e9ebea;" />-->
+<!--    <AnchorPane layoutX="197.0" layoutY="13.0" prefHeight="210.0" prefWidth="578.0">-->
+<!--        <children>-->
+<!--            <Label layoutX="8.0" layoutY="9.0" text="Bonjour">-->
+<!--                <font>-->
+<!--                    <Font name="System Bold" size="14.0" />-->
+<!--                </font>-->
+<!--            </Label>-->
+<!--            <Rectangle arcHeight="35.0" arcWidth="35.0" fill="#ff000d42" height="93.0" layoutX="448.0" layoutY="80.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="0.0" width="130.0" />-->
+<!--            <Rectangle arcHeight="35.0" arcWidth="35.0" fill="#ffbf0042" height="93.0" layoutX="300.0" layoutY="77.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="0.0" width="130.0" />-->
+<!--            <Label layoutX="307.0" layoutY="147.0" text="Compétitions" />-->
+<!--            <Label layoutX="456.0" layoutY="148.0" text="Equipes" />-->
+<!--            <Rectangle arcHeight="35.0" arcWidth="35.0" fill="#0dff0042" height="93.0" layoutX="152.0" layoutY="77.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="0.0" width="130.0" />-->
+<!--            <Label layoutX="161.0" layoutY="147.0" text="Candidats" />-->
+<!--            <Rectangle arcHeight="35.0" arcWidth="35.0" fill="#2c15bf42" height="93.0" layoutX="4.0" layoutY="77.0" stroke="BLACK" strokeType="OUTSIDE" strokeWidth="0.0" width="130.0" />-->
+<!--            <Label layoutX="11.0" layoutY="147.0" text="Utilisateurs" />-->
+<!--            <Text layoutX="66.0" layoutY="24.0" strokeType="OUTSIDE" strokeWidth="0.0" text="[Prénom]" wrappingWidth="78.0">-->
+<!--                <font>-->
+<!--                    <Font name="System Bold" size="14.0" />-->
+<!--                </font>-->
+<!--            </Text>-->
+<!--            <Text layoutX="10.0" layoutY="143.0" strokeType="OUTSIDE" strokeWidth="0.0" text="0" />-->
+<!--            <Text layoutX="160.0" layoutY="145.0" strokeType="OUTSIDE" strokeWidth="0.0" text="0" />-->
+<!--            <Text layoutX="311.0" layoutY="143.0" strokeType="OUTSIDE" strokeWidth="0.0" text="0" />-->
+<!--            <Text layoutX="456.0" layoutY="146.0" strokeType="OUTSIDE" strokeWidth="0.0" text="0" />-->
+<!--            <Circle fill="#0003ff59" layoutX="30.0" layoutY="103.0" radius="21.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="0.0" />-->
+<!--            &lt;!&ndash;            <ImageView fitHeight="34.0" fitWidth="35.0" layoutX="26.0" layoutY="73.0" pickOnBounds="true" preserveRatio="true">&ndash;&gt;-->
+<!--            &lt;!&ndash;               <image>&ndash;&gt;-->
+<!--            &lt;!&ndash;                  <Image url="@img/2x/outline_person_white_18dp.png" />&ndash;&gt;-->
+<!--            &lt;!&ndash;               </image>&ndash;&gt;-->
+<!--            &lt;!&ndash;            </ImageView>&ndash;&gt;-->
+<!--            <Circle fill="#0dff0059" layoutX="177.0" layoutY="105.0" radius="21.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="0.0" />-->
+<!--            &lt;!&ndash;            <ImageView fitHeight="34.0" fitWidth="35.0" layoutX="131.0" layoutY="75.0" pickOnBounds="true" preserveRatio="true">&ndash;&gt;-->
+<!--            &lt;!&ndash;               <image>&ndash;&gt;-->
+<!--            &lt;!&ndash;                  <Image url="@img/2x/outline_directions_run_white_18dp.png" />&ndash;&gt;-->
+<!--            &lt;!&ndash;               </image>&ndash;&gt;-->
+<!--            &lt;!&ndash;            </ImageView>&ndash;&gt;-->
+<!--            <Circle fill="#ffc70059" layoutX="325.0" layoutY="103.0" radius="21.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="0.0" />-->
+<!--            &lt;!&ndash;            <ImageView fitHeight="34.0" fitWidth="35.0" layoutX="237.0" layoutY="75.0" pickOnBounds="true" preserveRatio="true">&ndash;&gt;-->
+<!--            &lt;!&ndash;               <image>&ndash;&gt;-->
+<!--            &lt;!&ndash;                  <Image url="@img/2x/outline_emoji_events_white_18dp.png" />&ndash;&gt;-->
+<!--            &lt;!&ndash;               </image>&ndash;&gt;-->
+<!--            &lt;!&ndash;            </ImageView>&ndash;&gt;-->
+<!--            <Circle fill="#ff000d59" layoutX="474.0" layoutY="106.0" radius="21.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="0.0" />-->
+<!--            <Label layoutX="9.0" layoutY="29.0" prefHeight="28.0" prefWidth="85.0" text="Accueil" textFill="#00000082">-->
+<!--                <font>-->
+<!--                    <Font name="Calibri Italic" size="24.0" />-->
+<!--                </font>-->
+<!--            </Label>-->
+<!--            &lt;!&ndash;            <ImageView fitHeight="34.0" fitWidth="35.0" layoutX="342.0" layoutY="73.0" pickOnBounds="true" preserveRatio="true">&ndash;&gt;-->
+<!--            &lt;!&ndash;               <image>&ndash;&gt;-->
+<!--            &lt;!&ndash;                  <Image url="@img/2x/outline_people_alt_white_18dp.png" />&ndash;&gt;-->
+<!--            &lt;!&ndash;               </image>&ndash;&gt;-->
+<!--            &lt;!&ndash;            </ImageView>&ndash;&gt;-->
+<!--        </children>-->
+<!--    </AnchorPane>-->
+<!--</children>-->
+<!--</AnchorPane>-->
+<!--            style="-fx-background-color: #2C9170;"-->
+<!--    -fx-background-color:        #38c798          #2C9170-->
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.*?>
+<AnchorPane xmlns:fx="http://javafx.com/fxml/1" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity"
+            prefHeight="540.0" prefWidth="789.0" style="-fx-background-color: #ffffff;"
+            xmlns="http://javafx.com/javafx/8" fx:controller="fr.koala.m2l.controller.ButtonControler">
+    <AnchorPane prefHeight="540.0" prefWidth="190.0" style="-fx-background-color: #757B78;"
+                AnchorPane.bottomAnchor="0.0">
+        <Button fx:id="refBtnWin" alignment="TOP_RIGHT" layoutX="-11.0" layoutY="244.0" mnemonicParsing="false"
+                onMouseClicked="#onBtnAccueilPressed" prefHeight="31.0" prefWidth="164.0"
+                style="-fx-background-color: #2C9170;" text="Accueil" textAlignment="RIGHT" textFill="WHITE">
+            <font>
+                <Font name="Calibri" size="14.0"/>
+            </font>
+
+        </Button>
+        <Button fx:id="btnEquipes" alignment="TOP_RIGHT" contentDisplay="TOP" layoutX="-11.0" layoutY="364.0"
+                mnemonicParsing="false" onMouseClicked="#onBtnEquipePressed" prefHeight="31.0" prefWidth="164.0"
+                style="-fx-background-color: #2C9170;" text="Equipes" textAlignment="RIGHT" textFill="WHITE">
+            <font>
+                <Font name="Calibri" size="14.0"/>
+            </font>
+        </Button>
+        <Button fx:id="btnCompetitions" alignment="TOP_RIGHT" layoutX="-11.0" layoutY="284.0" mnemonicParsing="false"
+                onMouseClicked="#onBtnCompPressed" prefHeight="31.0" prefWidth="164.0"
+                style="-fx-background-color: #2C9170;" text="Compétitions" textAlignment="RIGHT" textFill="WHITE">
+            <font>
+                <Font name="Calibri" size="14.0"/>
+            </font>
+        </Button>
+        <Button fx:id="btnUsers" alignment="TOP_RIGHT" layoutX="-11.0" layoutY="324.0" mnemonicParsing="false"
+                onMouseClicked="#onBtnUsersPressed" prefHeight="31.0" prefWidth="164.0"
+                style="-fx-background-color: #2C9170;" text="Utilisateurs" textAlignment="RIGHT" textFill="WHITE">
+            <font>
+                <Font name="Calibri" size="14.0"/>
+            </font>
+        </Button>
+        <Button fx:id="btnParametre" alignment="TOP_RIGHT" layoutX="-11.0" layoutY="405.0" mnemonicParsing="false"
+                onMouseClicked="#onBtnParamPressed" prefHeight="31.0" prefWidth="164.0"
+                style="-fx-background-color: #2C9170;" text="Paramètres" textFill="WHITE">
+            <font>
+                <Font name="Calibri" size="14.0"/>
+            </font>
+        </Button>
+        <Text fx:id="prenomText" fill="#f8f7f7" layoutX="5.0" layoutY="156.0" strokeType="OUTSIDE" strokeWidth="0.0"
+              text="[Prenom] [Nom] " textAlignment="CENTER" wrappingWidth="181.0">
+            <font>
+                <Font name="System Bold" size="14.0"/>
+            </font>
+        </Text>
+        <!-- <ImageView stylesheet="img.css" fitHeight="80.0" fitWidth="85.0" layoutX="37.0" layoutY="14.0" pickOnBounds="true" preserveRatio="true" styleClass="fr">
+           <image>
+              <Image url="@img/2x/outline_person_white_18dp.png" />
+           </image>
+        </ImageView> -->
+        <Text fx:id="roleText" fill="#f8f7f7" layoutY="186.0" strokeType="OUTSIDE" strokeWidth="0.0" text="[Role] "
+              textAlignment="CENTER" wrappingWidth="190.0">
+            <font>
+                <Font name="System Bold" size="14.0"/>
+            </font>
+        </Text>
+        <Label layoutX="56.0" layoutY="506.0" opacity="0.54" text="Déconnexion" textFill="#dacfcf">
+            <font>
+                <Font name="System Italic" size="14.0"/>
+            </font>
+        </Label>
+    </AnchorPane>
+</AnchorPane>
